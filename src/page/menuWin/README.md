@@ -1,0 +1,2 @@
+1.打开frameMain
+2.打开frameAddButton
