@@ -1,0 +1,1 @@
+子wgt目录，子widget根目录名称为widgetId

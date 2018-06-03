@@ -22,8 +22,8 @@ const webpackConfig = merge(baseWebpackConfig, {
 	entry,
 	output: {
 		path         : config.build.assetsRoot,
-		filename     : utils.assetsPath('./js/[name].[chunkhash].js'),
-		chunkFilename: utils.assetsPath('./js/[name].[chunkhash].js')
+		filename     : utils.assetsPath('./script/[name].[chunkhash].js'),
+		chunkFilename: utils.assetsPath('./script/[name].[chunkhash].js')
 	},
 	module: {
 		rules: utils.styleLoaders({
