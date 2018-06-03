@@ -3,8 +3,6 @@ cookBook：食谱书页面
   win:主进程
   frameMain：主窗口-显示食谱列表
   frameSearchButton：进入搜索页------与menu.frameAddButton可以共用
-  frameSearchInput：搜索输入
-  frameSearchHistory：搜索历史记录兼推荐搜索
 
 4号
 menu：菜单页面
