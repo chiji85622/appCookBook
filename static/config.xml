@@ -14,7 +14,7 @@
 
     </author>
 
-    <content src="./html/demo.html" />
+    <content src="./html/cookBookWin.html" />
 
     <access origin="*" />
 
@@ -22,9 +22,9 @@
 
 	<preference name="appBackground" value="rgba(0,0,0,0.0)"/>
 
-	<preference name="windowBackground" value="rgba(0,0,0,0.0)"/>
+	<preference name="windowBackground" value="rgba(248,248,248,1)"/>
 
-	<preference name="frameBackgroundColor" value="rgba(0,0,0,0.0)"/>
+	<preference name="frameBackgroundColor" value="rgba(248,248,248,1)"/>
 
 	<preference name="hScrollBarEnabled" value="false"/>
 
