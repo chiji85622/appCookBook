@@ -1,14 +1,12 @@
 <template>
-  <div :class="$style.container">
+  <div :class="$style.container" :style="hei">
 
-    <!-- <div :class="$style.img"></div> -->
-<img :src="pic" alt="" style="height:100%">
+
     <div :class="$style['blur-wrapper']">
-      <!-- <div :class="$style['blur-img']"></div> -->
-      <img :src="pic" alt="" :class="$style['blur-img-a']">
+      <div :class="$style['blur-img']" ref="aa" :style="hei"></div>
+
     </div>
-    <!-- <div :class="$style.img"></div> -->
-    <!-- <img :src="pic" alt="" style="width:100%"> -->
+  
 
     <div :class="$style.info">
       <div :class="$style.left">
@@ -31,12 +29,43 @@
 <script>
 export default {
   name: "recipe",
-  props: {},
+  props: {
+    img:{
+      type:String,
+      // default:require('@static/image/224-505.jpg')
+      // default:require('@static/image/300-450.jpg')
+      // default:require('@static/image/500-500.jpg')
+      // default:require('@static/image/558-450.jpg')
+       default:require('@static/image/660-440.jpg')
+    }
+  },
   data: () => ({
-    // pic:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528108010640&di=ba1cbd1cc78a6ef6eaae5349be4970c4&imgtype=0&src=http%3A%2F%2Fpic.yesky.com%2FuploadImages%2F2014%2F305%2F10%2FLFZWH7G58B43.jpg"
-      pic:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528102890956&di=0d27bed786b7cfa5edeb53add7666966&imgtype=0&src=http%3A%2F%2Fimg.tupianzj.com%2Fuploads%2Fallimg%2F160804%2F9-160P4201Q8.jpg"
+    i:null
   }),
-  created() {}
+  computed:{
+    hei(){
+      console.log(this.img)
+      return {
+        // backgroundImage:`url(${this.img})`
+        backgroundImage:`url(${this.img})`
+      }
+    }
+  },
+  created() {
+    // console.log(this.img)
+    // const img = new Image()
+    // img.onload=()=>{
+    //   console.dir(img)
+    //   console.log('w',img.width)
+    //   console.log('h',img.height)
+    //   this.i=img.src
+    // }
+    // img.src=this.img
+    console.log(this.hei)
+  },
+  mounted(){
+    console.dir(this.$refs.aa)
+  }
 };
 </script>
 

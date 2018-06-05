@@ -11,7 +11,7 @@ module.exports = {
 
   dev: {
     // 资源路径
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: '',
     assetsPublicPath: '/',
 
     // 代理表

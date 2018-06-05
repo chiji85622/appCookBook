@@ -1,11 +1,14 @@
+:root{
+  --infoHeight :25%;
+}
+
 .container{
   height:calc((100vw-32pr) * 3 / 4);
   margin: 16pr 0;
   border-radius: 16pr;
   overflow: hidden;
   position: relative;
-
-  /* background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528108010640&di=ba1cbd1cc78a6ef6eaae5349be4970c4&imgtype=0&src=http%3A%2F%2Fpic.yesky.com%2FuploadImages%2F2014%2F305%2F10%2FLFZWH7G58B43.jpg) no-repeat  center/cover; */
+  background: rgba(0,0,0,0.5) no-repeat center/cover;
 }
 
 .info{
@@ -13,51 +16,30 @@
   left: 0;
   right: 0;
   bottom: 0;
-  color:white;
-  overflow: hidden;
+  height:var(--infoHeight);
+  box-sizing: border-box;
   padding: 8pr 24pr;
+  overflow: hidden;
   line-height: 1.5;
   display: flex;
-}
-
-.img{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528102890956&di=0d27bed786b7cfa5edeb53add7666966&imgtype=0&src=http%3A%2F%2Fimg.tupianzj.com%2Fuploads%2Fallimg%2F160804%2F9-160P4201Q8.jpg) no-repeat  center/cover;
-  /* background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528108010640&di=ba1cbd1cc78a6ef6eaae5349be4970c4&imgtype=0&src=http%3A%2F%2Fpic.yesky.com%2FuploadImages%2F2014%2F305%2F10%2FLFZWH7G58B43.jpg) no-repeat  center/cover; */
+  color:white;
 }
 
 .blur-wrapper{
   position: absolute;
-  height: 30%;
+  height: var(--infoHeight);
   left: 0;
   right: 0;
   bottom: 0;
   overflow: hidden;
 }
-.blur-img-a{
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
+
 
 .blur-img{
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color:white;
-  /* overflow: hidden; */
-  /* rgba(0, 0, 0, 0.5) */
-  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528102890956&di=0d27bed786b7cfa5edeb53add7666966&imgtype=0&src=http%3A%2F%2Fimg.tupianzj.com%2Fuploads%2Fallimg%2F160804%2F9-160P4201Q8.jpg) no-repeat  center/cover;
-  /* background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528108010640&di=ba1cbd1cc78a6ef6eaae5349be4970c4&imgtype=0&src=http%3A%2F%2Fpic.yesky.com%2FuploadImages%2F2014%2F305%2F10%2FLFZWH7G58B43.jpg) no-repeat  bottom/cover; */
-  /* filter: blur(20px); */
-  /* margin: -30px; */
+  height: calc(100% / 0.25);
+  transform: translate(0px,-65%) scale(1.2);
+  background: rgba(0,0,0,0.5) no-repeat center/cover;
+  filter: blur(20px);
 }
 
 .left{
@@ -67,15 +49,12 @@
 
 .right{
   min-width: 20%;
-  height: 100%;
   z-index: 0;  
   display: flex;
-  align-items: stretch;
   justify-content: flex-end;
 }
 
 .name{
-  width:100%;
   font-size:20pr;
   font-weight: bold;
   overflow: hidden;
