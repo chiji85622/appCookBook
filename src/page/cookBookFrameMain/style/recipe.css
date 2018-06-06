@@ -37,7 +37,7 @@
 	right: 0;
 	left: 0;
 	height: calc(100% / var(--infoHeight));
-	transform: translate(0px, calc(100% * var(--infoHeight) - 100%)) scale(1.2);
+	transform: translate(0px, calc(100% * var(--infoHeight) - 100%)) scale(1.35);
 	filter: blur(20px);
 }
 

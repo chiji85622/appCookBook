@@ -75,7 +75,8 @@ const webpackConfig = merge(baseWebpackConfig, {
 	},
 	plugins: [
 		new webpack.DefinePlugin({
-			'process.env': env
+			'process.env': env,
+			'__desgin':config.desgin,
 		}),
 		new VueLoaderPlugin(),
 		new MiniCssExtractPlugin({

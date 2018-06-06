@@ -49,7 +49,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 	},
 	plugins: [
 		new webpack.DefinePlugin({
-			'process.env': require('../config/dev.env')
+			'process.env': require('../config/dev.env'),
+			'__desgin':config.desgin,
 		}),
 		new VueLoaderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),

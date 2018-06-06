@@ -3,7 +3,6 @@ export default {
     url: "../html/cookBookFrameMain.html",
     useWKWebView: true,
     pageBounce: false,
-    bgColor: "rgb(248,248,248)",
     scrollToTop: true,
     scrollEnabled: false,
     vScrollBarEnabled: false,

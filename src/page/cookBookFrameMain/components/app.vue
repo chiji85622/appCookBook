@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.container" @scroll="test">
-    <recipe v-for="item in 1" :key="item"></recipe>
+    <recipe v-for="item in 12" :key="item"></recipe>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   }),
   methods: {
     test() {
-      console.log(1);
+      // console.log(1);
     }
   },
 };

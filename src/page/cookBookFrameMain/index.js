@@ -3,7 +3,7 @@ import Flexible from '../../units/flexible';
 import Vue from 'vue';
 import App from './components/app';
 
-Flexible(414,750);
+Flexible(__desgin.width, __desgin.max);
 
 Bootstrap(()=>{
   new Vue({

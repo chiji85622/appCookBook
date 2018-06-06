@@ -7,3 +7,13 @@ body {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
+
+.test{
+  position: absolute;
+  bottom: 32pr;
+  left: 16pr;
+  height: 46pr;
+  width: 46pr;
+  background-color: red;
+  border-radius: 50%;
+}

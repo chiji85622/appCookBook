@@ -1,9 +1,7 @@
 export default function(cb) {
-  try {
-    apiready = function() {
-      cb();
-    };
-  } catch (err) {
+  if (process.env["NODE_ENV"] === "production") {
+    window.apiready = cb;
+  } else {
     cb();
   }
 }
