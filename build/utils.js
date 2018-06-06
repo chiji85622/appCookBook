@@ -2,12 +2,12 @@
  * 工具
  */
 
-const path                 = require("path");
-const glob                 = require("glob");
-const HtmlWebpackPlugin    = require('html-webpack-plugin');
+const path = require("path");
+const glob = require("glob");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const config               = require("../config");
-const packageConfig        = require("../package.json");
+const config = require("../config");
+const packageConfig = require("../package.json");
 
 /**
  * 获取资源的绝对路径
@@ -138,9 +138,17 @@ exports.getEntry = function() {
   let entry = {};
 
   srcs.forEach(src => {
-    const keys = src.split("/");
-    const key = keys[keys.length - 1].split(".")[0];
-    const chunk = key === "index" ? keys[keys.length - 2] : key;
+    const chunk = src
+      .split("/")
+      .slice(3, -1)
+      .map(
+        (value, key) =>
+          key === 0
+            ? value
+            : value.substring(0, 1).toUpperCase() + value.substring(1)
+      )
+      .join("");
+
     entry[chunk] = src;
   });
 
@@ -159,11 +167,13 @@ exports.getOutputHtml = function(entry, config) {
     res.push(
       new HtmlWebpackPlugin({
         ...config,
-        chunks: [chunk,'vendors','manifest'],
-        filename: `html/${chunk}.html`,
+        chunks: [chunk, "vendors", "manifest"],
+        filename: `html/${chunk}.html`
       })
     );
   }
 
   return res;
 };
+
+exports.getEntry();
