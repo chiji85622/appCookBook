@@ -9,7 +9,7 @@
 
 body{
   margin: 0;
-  background-color: blue
+  background-color: rgba(248,248,248,1)
 }
 
 .container{
@@ -28,18 +28,18 @@ body{
 .aa{
   height: 60pr;
   /* width: 100%; */
-  margin: 16pr;
+  margin: 16pr ;
   /* border-radius: 8pr; */
-  /* background: red; */
+  background: red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .a{
   flex-basis: 50%;
-  /* height: 24pr; */
-  /* width: 24pr; */
-  margin: 12pr;
+  height: 24pr;
+  width: 24pr;
+  margin: 8pr;
   text-align: center;
   background-color: white
 }

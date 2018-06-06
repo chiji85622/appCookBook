@@ -7,6 +7,7 @@ export default {
   scrollEnabled: false,
   vScrollBarEnabled: false,
   hScrollBarEnabled: false,
+  bgColor:'rgba(0,0,0,0)',
   rect: {
     marginLeft: 0,
     marginTop: 20,
