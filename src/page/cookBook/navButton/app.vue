@@ -5,7 +5,16 @@
 </template>
 
 <style lang="postcss" module>
-@import "../style/app";
+body {
+  margin: 0;
+}
+
+.wrapper{
+  width: 100vw;
+  height:100vh;
+  border-radius: 50%;
+  background-color: red;
+}
 </style>
 
 <script>

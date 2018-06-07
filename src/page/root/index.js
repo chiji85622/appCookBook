@@ -1,6 +1,6 @@
-import Bootstrap from "../../units/bootstrap";
-import CookBookWinConfig from "./cookBookWinConfig";
+import {Bootstrap} from "@/units";
+import {CookBookWin} from "@/router";
 
 Bootstrap(() => {
-  api.openWin(CookBookWinConfig);
+  api.openWin(CookBookWin);
 });

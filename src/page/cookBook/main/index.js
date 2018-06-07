@@ -1,7 +1,6 @@
-import Bootstrap from "../../units/bootstrap";
-import Flexible from "../../units/flexible";
 import Vue from "vue";
-import App from "./components/app";
+import { Bootstrap, Flexible } from "@/units";
+import App from "./app";
 
 Flexible(__desgin.width, __desgin.max);
 
