@@ -1,6 +1,6 @@
 import Pr from "../units/pr";
 
-export const cookBookWin={
+export const CookBookWin={
   name: "cookBookWin",
   url: "../html/cookBookWin.html",
   useWKWebView: true,
@@ -13,9 +13,9 @@ export const cookBookWin={
   scaleEnabled: false,
 }
 
-export const cookBookFrameMain = {
+export const CookBookMain = {
   name: "cookBookFrameMain",
-  url: "../html/cookBookFrameMain.html",
+  url: "../html/cookBookMain.html",
   useWKWebView: true,
   pageBounce: false,
   scrollToTop: true,
@@ -30,9 +30,9 @@ export const cookBookFrameMain = {
   }
 };
 
-export const cookBookFrameSearchButton = () => ({
-  name: "cookBookFrameSearchButton",
-  url: "../html/cookBookFrameSearchButton.html",
+export const CookBookNavButton = () => ({
+  name: "cookBookFrameNavButton",
+  url: "../html/cookBookNavButton.html",
   useWKWebView: true,
   pageBounce: false,
   bgColor: "rgb(0,0,0,0)",
